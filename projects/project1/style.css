@@ -1,0 +1,109 @@
+
+h1{
+    float: left;
+}
+
+.name {
+    position: relative;
+    font-size: 6vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-right: auto;
+}
+
+header {
+    margin-top: -5vw;
+    margin-bottom: -5vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0vw 2.5vw;
+}
+.empty {
+    padding: 1%;
+}
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    text-decoration: none;
+}
+.navbar a{
+    /*color: white;*/
+    color: black;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    padding: 1em;
+    font-size: calc(5px + 1.3vw);
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.navbar a:hover{
+    /*background-color: rgb(205, 201, 201);*/
+    box-shadow: 0 0 0.4em 0 rgba(0,0,0,0.5);
+    border-radius: 0.5em;
+    /*color: white;*/
+}
+.navbar li{
+    float: right;
+    padding: 0.5em;
+}
+
+.active {
+    border-bottom: 0.1vw solid grey;
+}
+
+.navbarbottom ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    padding: 0.8vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.navbarbottom a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    padding: 3em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: calc(5px + 1.3vw);
+}
+.navbarbottom a:hover{
+    box-shadow: 0 0 0.6em 0 rgba(0,0,0,0.5);
+    border-radius: 0.5em;
+}
+.navbarbottom li{
+    align-items: center;
+}
+
+.backtotop{
+    margin: auto;
+    display: block;
+    text-align: center;
+    max-width: 15%;
+    padding: 1em;
+}
+.backtotop a{
+    display: block;
+    text-align: center;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    font-size: calc(5px + 1.3vw);
+}
+
+.backtotop a:hover{
+    box-shadow: 0 0 0.7em 0 rgba(0,0,0,0.5);
+    border-radius: 0.5em;
+}
