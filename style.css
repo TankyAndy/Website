@@ -9,7 +9,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 1.7vw;
+    font-size: calc(5px + 1.3vw);
     text-decoration: none;
     padding: 0vw 1vw;
 }
