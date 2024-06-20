@@ -84,8 +84,6 @@ header {
 }
 .navbar ul{
     list-style-type: none;
-    overflow: hidden;
-    text-decoration: none;
 }
 .navbar a{
     /*color: white;*/
@@ -94,7 +92,7 @@ header {
     display: flex;
     text-align: center;
     padding: 1em;
-    font-size: calc(5px + 1.3vw);
+    font-size: 1.7vw;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -143,7 +141,7 @@ header {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: calc(8px + 1.3vw);
+    font-size: 1.7vw;
 }
 
 
