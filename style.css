@@ -84,8 +84,6 @@ header {
 }
 .navbar ul{
     list-style-type: none;
-    overflow: hidden;
-    text-decoration: none;
 }
 .navbar a{
     /*color: white;*/
@@ -151,3 +149,4 @@ header {
     opacity: 80%;
     box-shadow: 0 0 0.4em 0.1em rgba(0,0,0,0.4), 0 0 0.5em 0.35em rgba(0,0,0,0.8);
 }
+/**/
