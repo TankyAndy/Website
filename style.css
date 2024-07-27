@@ -234,6 +234,7 @@ html, body {
     }
     .buttons {
         transform: translateY(30vw);
+        color: black;
     }
 
     @media (max-width: 500px) {
@@ -253,6 +254,7 @@ html, body {
         }
         .buttons {
             transform: translateY(40vw);
+            color: black;
         }
     }
     
@@ -262,6 +264,7 @@ html, body {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    color: black;
 }
 
 .buttons button {
