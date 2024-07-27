@@ -101,6 +101,7 @@ html, body {
     left: 0;
     padding: 0;
     opacity: 90%;
+    z-index: 1000;
 }
 
 .topbar2 {
