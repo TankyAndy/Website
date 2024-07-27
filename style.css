@@ -243,17 +243,17 @@ html, body {
         }
     
         .aboutfull {
-            margin-top: 60%;
+            margin-top: 70%;
         }
     
         .gallery {
-            margin-top: 50%;
+            margin-top: 60%;
         }
         .suboption {
             padding: 4% 0;
         }
         .buttons {
-            transform: translateY(45vw);
+            transform: translateY(50vw);
             color: black;
         }
     }
