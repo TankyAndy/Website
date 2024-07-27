@@ -60,7 +60,7 @@ html, body {
 
 .aboutfull img{
     width: 40vw;
-    box-shadow: 0 0 0.5em 0.1em rgba(0,0,0,0.45);
+    box-shadow: 0 0 0.2em 0 rgba(0,0,0,0.45);
     border-radius: 0.2em;
 }
 
