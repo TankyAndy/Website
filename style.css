@@ -165,11 +165,13 @@ html, body {
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2%;
     padding: 0% 2.5%;
+    z-index: 1;
 }
 
 .gallery a{
     text-decoration: none;
     color: black;
+    z-index: 1;
 }
 
 .gallery img {
@@ -195,6 +197,7 @@ html, body {
     opacity: 80%;
     transform: scale(1.05);
     box-shadow: 0 0px 1em rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 
