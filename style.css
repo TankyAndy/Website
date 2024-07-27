@@ -253,7 +253,7 @@ html, body {
             padding: 4% 0;
         }
         .buttons {
-            transform: translateY(45vw);
+            transform: translateY(50vw);
             color: black;
         }
     }
