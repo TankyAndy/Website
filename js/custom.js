@@ -16,34 +16,28 @@ function filterGallery(category) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Get the main div
     const mainDiv = document.querySelector('.main');
     const name = document.querySelector('.name');
 
-    // Ensure the main div fades in when the page loads
     mainDiv.style.transition = 'opacity 0.5s ease-in-out';
     name.style.transition = 'opacity 0.5s ease-in-out';
     mainDiv.style.opacity = '1';
     name.style.opacity = '1';
 
-    // Handle internal navigation links
     const links = document.querySelectorAll('a[href]');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
-            // Handle only links navigating within the same origin
             if (link.href.startsWith(window.location.origin)) {
-                e.preventDefault(); // Stop immediate navigation
+                e.preventDefault();
 
-                const target = link.href; // Get target URL
+                const target = link.href;
 
-                // Start fade-out animation for the main div
                 mainDiv.style.opacity = '0';
                 name.style.opacity = '0';
                 
-                // Navigate to the new page after fade-out completes
                 setTimeout(() => {
                     window.location.href = target;
-                }, 500); // Match the CSS transition duration
+                }, 500);
             }
         });
     });
