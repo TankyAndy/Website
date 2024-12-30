@@ -41,15 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    // Handle back/forward navigation with the pageshow event
-    window.addEventListener('pageshow', (event) => {
-        if (event.persisted) { // Check if the page is loaded from cache
-            mainDiv.style.transition = 'none'; // Disable transitions
-            name.style.transition = 'none';   // Disable transitions
-            mainDiv.style.opacity = '1';      // Ensure opacity is reset
-            name.style.opacity = '1';         // Ensure opacity is reset
-        }
-    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
