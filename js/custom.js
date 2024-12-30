@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainDiv = document.querySelector('.main');
     const name = document.querySelector('.name');
 
-    // Set transitions, but don't change opacity
     mainDiv.style.transition = 'opacity 0.5s ease-in-out';
     name.style.transition = 'opacity 0.5s ease-in-out';
+    mainDiv.style.opacity = '1';
+    name.style.opacity = '1';
 
     const links = document.querySelectorAll('a[href]');
     links.forEach(link => {
@@ -31,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const target = link.href;
 
-                // Only set opacity to 0 when navigating away
                 mainDiv.style.opacity = '0';
                 name.style.opacity = '0';
                 
