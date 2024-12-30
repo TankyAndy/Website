@@ -40,6 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 500);
             }
         });
+        window.addEventListener('pageshow', () => {
+            mainDiv.style.opacity = '1';
+            name.style.opacity = '1';
+        });
+    
     });
 });
 
