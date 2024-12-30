@@ -19,17 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainDiv = document.querySelector('.main');
     const name = document.querySelector('.name');
 
-    if (performance.navigation.type === performance.navigation.TYPE_BACK_FORWARD) {
-        mainDiv.style.transition = 'none'; // Disable transitions
-        name.style.transition = 'none';   // Disable transitions
-        mainDiv.style.opacity = '1';      // Ensure opacity is reset
-        name.style.opacity = '1';         // Ensure opacity is reset
-    } else {
+    const [navigationEntry] = performance.getEntriesByType('navigation');
+
+if (navigationEntry && navigationEntry.type === 'back_forward') {
+    mainDiv.style.transition = 'none'; // Disable transitions
+    name.style.transition = 'none';   // Disable transitions
+    mainDiv.style.opacity = '1';      // Ensure opacity is reset
+    name.style.opacity = '1';         // Ensure opacity is reset
+} else {
     mainDiv.style.transition = 'opacity 0.5s ease-in-out';
     name.style.transition = 'opacity 0.5s ease-in-out';
     mainDiv.style.opacity = '1';
     name.style.opacity = '1';
-    }
+}
+
     const links = document.querySelectorAll('a[href]');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
