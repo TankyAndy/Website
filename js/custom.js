@@ -19,24 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainDiv = document.querySelector('.main');
     const name = document.querySelector('.name');
 
-    // Function to show elements
-    const showElements = () => {
-        mainDiv.style.transition = 'opacity 0.5s ease-in-out';
-        name.style.transition = 'opacity 0.5s ease-in-out';
-        mainDiv.style.opacity = '1';
-        name.style.opacity = '1';
-    };
-
-    // Show elements on initial load
-    showElements();
-
-    // Handle browser back/forward navigation
-    window.addEventListener('pageshow', (event) => {
-        // If the page is being loaded from the browser cache (back/forward navigation)
-        if (event.persisted) {
-            showElements();
-        }
-    });
+    mainDiv.style.transition = 'opacity 0.5s ease-in-out';
+    name.style.transition = 'opacity 0.5s ease-in-out';
+    mainDiv.style.opacity = '1';
+    name.style.opacity = '1';
 
     const links = document.querySelectorAll('a[href]');
     links.forEach(link => {
