@@ -12,7 +12,7 @@
 <body>
     <div class="topbar">
         <header class="topbar2">
-            <h1 class="name">ABOUT<h1>
+            <h1 class="name">BUILD<h1>
             <nav class="navbar">
                 <ul>
                     <li><a href="../../index.html">PROJECTS</a></li>
@@ -26,7 +26,54 @@
         <div class="line"></div>
     </div>
     <hr>
-    <p class="text">Coming Soon...</p>
+
+    <div class="main">
+        <div class="maintext">
+            <div class="img-container">
+                <div class="img-with-sub">
+                    <img src="images/ProjectMainFile.png" alt="Main Project Folder">
+                    <p class="text">Main Project Folder</p>
+                </div>
+                <div class="img-with-sub">
+                    <img src="images/ProjectVGAFile.png" alt="VGA Folder">
+                    <p class="text">VGA Folder</p>
+                </div>
+            </div>            
+            <p class="text">The project schedule was divided into three milestones:</p>
+                <p class="text"><br><b>Milestone 1</b><br></p>
+                    <ul class="point">
+                        <li class="text">Complete game logic for falling ball physics.<br><br></li>
+                        <li class="text">Complete game logic for score incrementing and health decrementing.<br><br></li>
+                        <li class="text">complete game logic for general game states (game start, game on, game over).<br><br></li>
+                        <li class="text">get a dot printed on the screen using the VGA to track ball.<br><br></li>
+                    </ul>
+                <p class="text"><br><b>Milestone 2</b><br></p>
+                    <ul class="point">
+                        <li class="text">Build on game logic to include additional fruits and print them as dots.<br><br></li>
+                        <li class="text">Allow VGA to print object using memory file and on-chip memory (done on separate file or easier testing).<br><br></li>
+                        <li class="text">Complete art assets (fruits and backgrounds).<br><br></li>
+                    </ul>
+                <p class="text"><br><b>Milestone 3</b><br></p>
+                    <ul class="point">
+                        <li class="text">Connect PS/2 keyboard to FPGA and create game logic to control reticle with arrow keys.<br><br></li>
+                        <li class="text">Complete game logic for collision between reticle and fruits.<br><br></li>
+                        <li class="text">Finish rest of the game logic (ie. new conditions for switching game states).<br><br></li>
+                    </ul>
+            <div class="img-with-sub-no-under">
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/nrr2v-PF0W8" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="text"><br><b>Note: </b>I originally intended to use a mouse to control the reticle. While I was successful in 
+                <br>connecting the mouse to the FPGA, the way it transmit data made it impossible for proper functioning 
+                <br>of collision logic and thus incompatible with the project.
+                <br><br><b>Full files of project unavailable due to large size. Please contact me if interested.</b></p> 
+            </div>
+        </div>
 <hr>
     <nav class="navbarbottom">
         <ul>
@@ -38,9 +85,12 @@
         </ul>
     </nav>
 <hr>
-    <nav class="backtotop">
-        <a href="#">BACK TO TOP</a>
-    </nav>
+<nav class="backtotop">
+    <a>BACK TO TOP</a>
+</nav>
+    
+</div>
+    <script src="/js/custom.js"></script>
 </body>
 
 

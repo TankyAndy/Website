@@ -26,7 +26,80 @@
         <div class="line"></div>
     </div>
     <hr>
-    <p class="text">Coming Soon...</p>
+
+    <div class="main">
+
+    <div class="maintext">
+        <p class="text">
+            As a final project for my ECE244 Digital Systems course, I created an FPGA shooter game. 
+            <br>I would like to present:
+        </p>
+        <div class="maintextimg">
+        <h2 class="projectname">Capybara Fruit Frenzy</h2>
+        <img src="images/projectloginscreen.png" alt="loginscreen">
+        </div>
+        <p class="text">
+            Capybara Fruit Frenzy is an interactive single player game that involves numerous falling fruits that are continuously
+            dropping from the sky. The goal of the game is to prevent these falling fruits from hitting the capybaras at the
+            bottom of the screen by navigating the reticle to the falling fruit. 
+        </p>
+        <div class="content-container">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/eO5rz9-BaeA" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <ul class="point">
+            <p class="text"><b>Capybara Fruit Frenzy FPGA Game Video: <br><br></p>
+            <li class="text">Use of arrows keys UP, DOWN, LEFT, RIGHT to control the target.<br><br></li>
+            <li class="text">When the coordinates of the target overlap with the fruits 
+                <br>(shown as squares on the display), the fruit resets to the of the screen at a new location.
+                <br>and the score displayed on HEX1 increases by 1.<br><br></li>
+            <li class="text">LEDRs on the FPGA blink to indicate the fruits are falling properly.<br><br></li>
+            <li class="text">Objects being drawn over the 160 by 120 pixel background.<br><br></li>
+        </ul>
+        </div>
+        <br>
+        <div class="content-container">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/tUeXU-hAc5U" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <ul class="point">
+            <p class="text"><b>Capybara Fruit Frenzy Proper VGA Component Video: <br><br></p>
+            <li class="text">Working logic for drawing fruits from a memory instantiation file over a coloured background.<br><br></li>
+            <li class="text">Generation of multiple fruits being drawn over the screen at randomized coordinates.<br><br></li>
+        </ul>
+    </div>
+    <br>
+        <p class="text">
+            Player Role: The player can use the up, down, left, and right arrow keys to move the target to the fruits. When the
+            target overlaps with the falling fruit, the player’s score increments, which is displayed on HEX1. 
+            <br>
+            <br>
+            Game Over Condition: The player starts with five lives, losing one life each time a fruit hits the capybara (ie. bottom
+            of the screen). The player’s lives remaining are displayed on HEX0. The game ends when the player’s lives reaches 0. 
+            <br>
+            <br>
+            The game components are displayed on: 
+            <ul class="point">
+                <li class="text">Computer screen to display the VGA graphics including the game page and falling fruits.<br><br></li>
+                <li class="text">FPGA board to display the player’s lives and score of the game.<br><br></li>
+            </ul>
+            <p class="text"><b>Note: </b>the fruits fall very slowly and only register collisions when it moves due to errors.
+                <br>A more proper demonstration video with updated background with capybaras will be added soon.
+                <br>Proper VGA Component is separate due to time constraints.</p>
+        </p>
+        
+        </div>
+    </div>
 <hr>
     <nav class="navbarbottom">
         <ul>
@@ -39,8 +112,11 @@
     </nav>
 <hr>
     <nav class="backtotop">
-        <a href="#">BACK TO TOP</a>
+        <a>BACK TO TOP</a>
     </nav>
+
+</div>
+    <script src="/js/custom.js"></script>
 </body>
 
 

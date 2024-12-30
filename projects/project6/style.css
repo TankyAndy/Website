@@ -58,15 +58,22 @@ html, body {
     font-style: normal;
 }
 
+/* Default topbar styles */
 .topbar {
-    background-color: white;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0;
-    opacity: 90%;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    transition: transform 0.3s ease-in-out; /* Smooth sliding transition */
 }
+
+/* Slide-up effect */
+.topbar.slide-up {
+    transform: translateY(-100%); /* Moves the topbar out of view */
+}
+
 
 .topbar2 {
     margin-top: -35px;
@@ -277,4 +284,13 @@ html, body {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+}
+
+.main, .name{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0 !important;
 }

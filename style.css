@@ -58,10 +58,11 @@ html, body {
 .aboutfull {
     margin-top: 10%;
     display: flex;
+    padding: 0 5%;
 }
 
 .aboutfull img {
-    width: 40vw;
+    width: 35vw;
     height: 100%;
     box-shadow: 0 0 0.2em 0 rgba(0,0,0,0.45);
     border-radius: 0.2em;
@@ -186,7 +187,7 @@ html, body {
 
 .gallery p {
     position: relative;
-    top: -5%;
+    top: -3%;
     text-align: center;
     font-size: 17px;
     font-family: "Roboto", sans-serif;
@@ -297,4 +298,13 @@ html, body {
     opacity: 1;
     transform: scale(1);
     pointer-events: auto;
+}
+
+.main, .name{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0 !important;
 }
