@@ -408,7 +408,10 @@ ul.point li {
 
 @media(max-width: 750px){
     .maintext{
-        padding: 25% 5%;
+        margin-top: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 25%;
     }
 
     .maintextimg {
@@ -424,10 +427,6 @@ ul.point li {
         margin-bottom: 10rem;
     }
 
-    .projectname{
-        padding-top: 30%;
-    }
-    
     .video-container{
         width: 100%;
         margin-top: 0;
